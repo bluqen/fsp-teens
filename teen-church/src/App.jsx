@@ -7,11 +7,13 @@ import EventsPage from "./pages/EventsPage";
 import AnnouncementsPage from "./pages/AnnouncementsPage";
 import AlbumPage from "./pages/AlbumPage";
 import LocationPage from "./pages/LocationPage";
+import ScrollToTop from "./pages/ScrollToTop";
 
 const App = () => {
   return (
     <main className="">
       <BrowserRouter>
+      <ScrollToTop />
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
