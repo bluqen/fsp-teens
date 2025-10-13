@@ -1,0 +1,38 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Licorice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Licorice&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-licorice: "Licorice", cursive;
+  --font-caprasimo: "Caprasimo", cursive;
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+}
+
+@utility text-gradient {
+    @apply bg-gradient-to-r from-blue-800 via-white to-red-600 bg-clip-text text-transparent font-bold;
+}
+
+@utility text-gradient-2 {
+    @apply bg-gradient-to-r from-blue-800 to-purple-400 bg-clip-text text-transparent font-bold;
+}
+
+@utility nav-link {
+  @apply hover:bg-indigo-800/30 px-4 py-2 text-purple-500 font-semibold m-3 transition-colors duration-150 rounded-2xl cursor-pointer sm:block hidden text-xl;
+}
+
+@utility connect {
+  @apply p-2 font-bold text-2xl transition-all duration-300 
+}
+
+@utility nav-img {
+  @apply max-h-20
+}
+
+@utility nav-menu {
+  @apply text-purple-500 font-semibold text-2xl px-2 block hover:text-3xl md:hidden transition-all duration-150 cursor-pointer
+}
