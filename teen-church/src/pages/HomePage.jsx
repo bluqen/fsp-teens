@@ -34,7 +34,7 @@ const HomePage = () => {
               </span>{" "}
               Church
             </h1>
-            <p className="pt-0 sm:pt-10 text-gradient text-2xl">
+            <p className="pt-0 sm:pt-10 text-gradient text-xl sm:text-2xl text-center">
               Rooted in Christ, Rising in Purpose...
             </p>
 
