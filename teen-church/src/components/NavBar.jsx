@@ -39,21 +39,21 @@ const NavBar = () => {
       >
         <Link
           to="/events"
-          className="w-full text-purple-600 font-semibold py-2 hover:bg-purple-100 rounded"
+          className="w-full text-primary font-semibold py-2 rounded"
           onClick={() => setIsOpen(false)}
         >
           <i className="fa-solid fa-calendar-days pr-2"></i>Events
         </Link>
         <Link
           to="/announcements"
-          className="w-full text-purple-600 font-semibold py-2 hover:bg-purple-100 rounded"
+          className="w-full text-primary font-semibold py-2 rounded"
           onClick={() => setIsOpen(false)}
         >
           <i className="fa-solid fa-bullhorn pr-2"></i>Announcements
         </Link>
         <Link
           to="/album"
-          className="w-full text-purple-600 font-semibold py-2 hover:bg-purple-100 rounded"
+          className="w-full text-primary font-semibold py-2 rounded"
           onClick={() => setIsOpen(false)}
         >
           <i className="fa-solid fa-images pr-2"></i>Album

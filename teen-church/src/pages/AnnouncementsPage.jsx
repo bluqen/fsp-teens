@@ -38,7 +38,7 @@ const AnnouncementsPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-50 via-white to-purple-200 py-20 px-4 flex flex-col items-center">
-      <h1 className="text-4xl font-bold text-purple-700 mb-10">
+      <h1 className="text-4xl font-bold text-primary mb-10">
         Announcements
       </h1>
 

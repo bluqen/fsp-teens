@@ -56,7 +56,7 @@ const EventsPage = () => {
       {events.length === 0 ? (
         <p className="text-center text-gray-600 text-lg">No upcoming events yet.</p>
       ) : (
-        <div className="max-w-5xl mx-auto grid gap-10 sm:grid-cols-3">
+        <div className="max-w-5xl mx-auto grid gap-10 sm:grid-cols-2 md:grid-cols-3 justify-center">
           {events.map(({ id, fields }) => (
             <div
               key={id}

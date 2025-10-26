@@ -228,16 +228,16 @@ export const Footer = () => {
             Stay Connected
           </h3>
           
-          <div className="flex gap-3">
+          <div className="flex justify-center md:justify-start gap-3">
             <i class="fa-solid fa-location-dot"></i>
             <p className="text-sm mb-4 text-gray-400">30 Ibari St, off Iju Road, Ifako Agege, Lagos.</p>
           </div>
-          <div className="flex gap-3">
+          <div className="flex justify-center md:justify-start gap-3">
             <i class="fa-solid fa-envelope"></i>
             <p className="text-sm mb-4 text-gray-400">rccgfaithsanctuary@gmail.com</p>
           </div>
           
-          <div className="flex gap-3">
+          <div className="flex justify-center md:justify-start gap-3">
             <i class="fa-solid fa-phone"></i>
             <p className="text-sm mb-4 text-gray-400">+234 805 669 9920</p>
           </div>
