@@ -32,6 +32,7 @@ export async function fetchLatestPhoto() {
 const AlbumPage = () => {
   const [photos, setPhotos] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     const fetchPhotos = async () => {
@@ -65,8 +66,8 @@ const AlbumPage = () => {
     );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-100 py-16 px-6">
-      <h1 className="text-4xl sm:text-5xl font-bold text-center mb-12 text-purple-800">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-theme-background-light py-16 px-6">
+      <h1 className="text-4xl sm:text-5xl font-bold text-center mb-12 text-theme-primary">
         <i className="fa-solid fa-camera"></i> Church Album
       </h1>
 
@@ -83,18 +84,40 @@ const AlbumPage = () => {
                 <img
                   src={fields.Image[0].url}
                   alt={fields.Caption || "Album photo"}
-                  className="h-64 w-full object-cover"
+                  className="h-64 w-full object-cover cursor-pointer"
+                  onClick={() => setSelectedImage(fields.Image[0].url)}
                 />
               )}
               {fields.Caption && (
                 <div className="p-4 text-center">
-                  <p className="text-purple-700 font-medium">
+                  <p className="text-theme-primary font-medium">
                     {fields.Caption}
                   </p>
                 </div>
               )}
             </div>
           ))}
+        </div>
+      )}
+
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-5 right-5 text-white text-5xl font-light hover:text-gray-300 transition"
+            aria-label="Close image"
+          >
+            &times;
+          </button>
+          <img
+            src={selectedImage}
+            alt="Enlarged album photo"
+            className="max-w-full max-h-full object-contain rounded-lg"
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
       )}
     </div>

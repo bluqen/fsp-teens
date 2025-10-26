@@ -5,10 +5,10 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between p-2 sticky top-0 w-full z-20 bg-white shadow-md">
+    <nav className="flex items-center justify-between p-2 sticky top-0 w-full z-20 bg-white shadow-md max-h-24">
       {/* Logo */}
       <Link to="/">
-        <img src="/logo.png" className="nav-img" alt="Logo" />
+        <img src="/logo.jpg" className="nav-img" alt="Logo" />
       </Link>
 
       {/* Desktop Links */}

@@ -8,6 +8,11 @@
   --font-licorice: "Licorice", cursive;
   --font-caprasimo: "Caprasimo", cursive;
   --font-inter: "Inter", sans-serif;
+
+  --color-primary:#5e63c2;
+  --color-secondary: #24378e;
+  --color-background-light: #fbeaff;
+  --color-accent: #00c9a7;
 }
 
 @layer base {
@@ -22,7 +27,7 @@
 }
 
 @utility nav-link {
-  @apply hover:bg-indigo-800/30 px-4 py-2 text-purple-500 font-semibold m-3 transition-colors duration-150 rounded-2xl cursor-pointer sm:block hidden text-xl;
+  @apply hover:bg-indigo-800/30 px-4 py-2 text-primary font-semibold m-3 transition-colors duration-150 rounded-2xl cursor-pointer sm:block hidden text-xl;
 }
 
 @utility connect {
@@ -34,5 +39,5 @@
 }
 
 @utility nav-menu {
-  @apply text-purple-500 font-semibold text-2xl px-2 block hover:text-3xl md:hidden transition-all duration-150 cursor-pointer
+  @apply text-primary font-semibold text-2xl px-2 block hover:text-3xl md:hidden transition-all duration-150 cursor-pointer
 }
