@@ -22,6 +22,13 @@ const NavBar = () => {
         <Link to="/album" className="nav-link">
           <i className="fa-solid fa-images pr-2"></i>Album
         </Link>
+        <a
+          href="https://rccgfaithsanctuary.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-link">
+          <i className="fa-solid fa-church pr-2"></i>Main Church
+        </a>
       </div>
 
       {/* Hamburger Button (mobile) */}
@@ -58,6 +65,15 @@ const NavBar = () => {
         >
           <i className="fa-solid fa-images pr-2"></i>Album
         </Link>
+        <a
+          href="https://rccgfaithsanctuary.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full text-primary font-semibold py-2 rounded"
+          onClick={() => setIsOpen(false)}
+        >
+          <i className="fa-solid fa-church pr-2"></i>Main Church
+        </a>
       </div>
     </nav>
   );

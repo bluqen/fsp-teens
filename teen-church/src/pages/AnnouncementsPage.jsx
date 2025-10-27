@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import { BackHomeButton } from "../components/BackButton"
 
 const AIRTABLE_API_KEY = import.meta.env.VITE_AIRTABLE_API_KEY
 const BASE_ID = import.meta.env.VITE_AIRTABLE_BASE_ID

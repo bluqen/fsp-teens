@@ -94,13 +94,6 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* Fixed button at the bottom right of the page */}
-        <div className="fixed bottom-10 right-10 z-30">
-          <div className="px-3 py-2 border-white border-2 text-xs text-white animate-bounce cursor-pointer bg-black bg-opacity-30 rounded-lg">
-            <i className="fa-solid fa-arrow-right mr-2"></i>Check out our main church
-          </div>
-        </div>
-
         <div className="pt-30 main-body bg-gradient-to-r from-blue-50 via-white to-theme-background-light min-h-screen w-full flex flex-col items-center gap">
           <div id="about" className="w-full flex justify-center">
             <WideCard
